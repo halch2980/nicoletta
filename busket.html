@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/busket.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="js/app.js">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Unicase:300,400,500,700|Open+Sans:300,400,700,800|Tangerine&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<header>
+   <div class="menu">
+       <div class="container">
+           <div class="row">
+               <div class="col-xs-3 logo">
+                   <a href="main.html">Nicoletta</a>
+               </div>
+               <div class="col-xs-6 menu_charity">
+                   <p class="menu_p-charity"> 1% от ваших покупок будет перечислен на лечение детей. Уже перечисленно <span>1200 </span>uah</p>
+               </div>
+               <div class="col-xs-3 menu_social">
+                   <p>Мы в социальных сетях</p>
+                   <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                   <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+               </div>
+               <div class="col-xs-6 menu_menu">
+                   <div class="menu_menu-item">
+                       <a href="#">Главная</a>
+                       <a href="#">Каталог</a>
+                       <a href="#">Доставка и оплата</a>
+                       <a href="#">Профиль</a>
+                   </div>
+               </div>
+               <div class="col-xs-3 menu_control">
+                   <form action="">
+                       <input type="text" class="seach">
+                       <button type="button"  class="btn-template-control" id="search-btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                       </button>
+                  </form>
+                  <button class="btn-template-control"><i class="fa fa-shopping-bag" aria-hidden="true"></i></button>
+                  <button class="btn-template-control"><i class="fa fa-user-circle-o" aria-hidden="true"></i></button>
+               </div>
+           </div>
+       </div>
+   </div>
+</header>
+<section class="busket">
+    <h2 class="h2-section">Корзина</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 busket-area">
+                <div class="busket-item">
+                    <div class="col-xs-4">
+                        <img src="img/prod.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="name">Product-name</h3>
+                        <div class="quantity">
+                            <button class="button-quantity">+</button>
+                            <p class="p-quantity">1</p>
+                            <button class="button-quantity">-</button>
+                            <p class="cost">1200 <span>uah</span></p>
+                        </div>
+                        <div class="size">
+                            <p class="p-desc">Size:</p>
+                            <button class="button-size">L</button>
+                            <button class="button-size">M</button>
+                            <button class="button-size">S</button>
+                            <button class="button-size">XL</button>
+                        </div>
+                        <div class="color">
+                            <p class="p-desc">Color:</p>
+                            <button class="button-color">1</button>
+                            <button class="button-color">2</button>
+                            <button class="button-color">3</button>
+                            <button class="button-color">4</button>
+                        </div>
+                        <button class="sell">Добавить в заказ</button>
+                    </div>
+                </div>
+                <div class="busket-item">
+                    <div class="col-xs-4">
+                        <img src="img/prod.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="name">Product-name</h3>
+                        <div class="quantity">
+                            <button class="button-quantity">+</button>
+                            <p class="p-quantity">1</p>
+                            <button class="button-quantity">-</button>
+                            <p class="cost">1200 <span>uah</span></p>
+                        </div>
+                        <div class="size">
+                            <p class="p-desc">Size:</p>
+                            <button class="button-size">L</button>
+                            <button class="button-size">M</button>
+                            <button class="button-size">S</button>
+                            <button class="button-size">XL</button>
+                        </div>
+                        <div class="color">
+                            <p class="p-desc">Color:</p>
+                            <button class="button-color">1</button>
+                            <button class="button-color">2</button>
+                            <button class="button-color">3</button>
+                            <button class="button-color">4</button>
+                        </div>
+                        <button class="sell">Добавить в заказ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 user-info">
+                <h3 class="h3-desc">Подтверждение информации заказа</h3>
+                <form action="#">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Фамиля">
+                    <input type="text" placeholder="Отчество">
+                    <input type="text" placeholder="Город">
+                    <input type="text" placeholder="Адрес">
+                    <input type="text" placeholder="Почтовый индекс">
+                    <input type="tel" placeholder="Номер телефона">
+                    <input type="mail" placeholder="E-mail">
+                    <textarea name="" id="" placeholder="Коментарий"></textarea>
+                    <button class="sell">Купить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 class="h3-footer">Профиль</h3>
+                <ul>
+                    <li><a href="#">Личные данные</a></li>
+                    <li><a href="#">Избранное</a></li>
+                    <li><a href="#">Мои заказы</a></li>
+                    <li><a href="#">Сообщить об оплате</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="h3-footer">Помощь</h3>
+                <ul>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Скачать</a></li>
+                    <li><a href="#">Частые вопросы</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="h3-footer">О компании</h3>
+                <ul>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-contact">
+                <h3 class="h3-footer">Свяжитесь с нами</h3>
+                <a href="#" type="tel">+38 (000) 000 00 00</a>
+                <h3 class="h3-footer-call">График работы Call-центра</h3>
+                <p class="p-call">пн.– сб. с 9:00 до 22:00</p>
+                <p class="p-call">вс.- c 9:00 до 18:00</p>
+                <button id="show_form_2" class="btn-template-footer">Задать вопрос</button>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/slick/slick.js"></script>
+    <script src="js/app.js" ></script>
+</body>
+</html>

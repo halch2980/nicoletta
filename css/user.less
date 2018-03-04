@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+.user-section{
+    padding: 40px 0;
+    .user-inform{
+        text-align: center;
+        display: inline-block;
+        padding: 20px 20px;
+        width: 33%;
+        margin-left: 0.1%;
+        font-size: 22px;
+        font-weight: lighter;
+        position: relative;
+        &:after{
+            position: absolute;
+            content: " ";
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background-color: #000000;
+        }
+    }
+    .orders{
+        .order{
+            &:after{
+                position: absolute;
+                content: " ";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #ffbd3f;
+            }
+            padding: 20px 0;
+            display: block;
+            position: relative;
+            .col-xs-1{
+                padding: 0;
+            }
+            .button-order{
+                background-color: #000;
+                border: none;
+                width: 100%;
+                color: #fff;
+                line-height: 40px;
+                font-size: 16px;
+                font-weight: lighter;
+            }
+            p{
+                margin-bottom: 0;
+                line-height: 40px;
+                font-size: 16px;
+            }
+            .order-info{
+                display: none;
+                height: 150px;
+                margin-top: 20px;
+
+                position: relative;
+                .info-prod{
+                    padding: 10px 80px;
+                    height: 170px;
+                    img{
+                        height: 150px;
+                        display: inline-block;
+                    }
+                    .color{
+                        margin-left: 40px;
+                        margin-right: 40px;
+                        padding: 10px 10px;
+                        display: inline-block;
+                    }
+                    .size{
+                        margin-right: 40px;
+                        padding: 10px 10px;
+                        display: inline-block;
+                    }
+                    .cost{
+                        margin-right: 40px;
+                        padding: 10px 10px;
+                        display: inline-block;
+                    }
+                    .count{
+                        margin-right: 40px;
+                        padding: 10px 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .order-user-info{
+                position: relative;
+                display: block;
+                min-height: 200px;
+                padding: 40px 80px;
+            }
+        }
+    }
+}

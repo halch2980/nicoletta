@@ -1,0 +1,122 @@
+.katalog{
+    .container{
+        position: relative;
+    }
+    .katalog_category{
+        display: block;
+        .col-xs-3{
+            position: relative;
+        }
+    }
+    .katalog_navigation{
+        margin-top: 10px;
+        .col-xs-2{
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            position: relative;
+        }
+        .filter-dropdown-ul{
+            position: relative;
+            transition: 0.3s;
+            &:hover{
+                ul{
+                    opacity: 1 !important;
+                    top: 35px;
+                    background-color: #fff;
+                }
+            }
+        }
+        .filter{
+            width: 100%;
+            padding: 5px ;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: light;
+            border: 2px solid transparent;
+            &:hover{
+                border: 2px solid #d3a630;
+            }
+        }
+        .filter_active{
+            border: 2px solid #d3a630;
+        }
+        .filter-dropdown{
+            width: 100%;
+            padding: 5px ;
+            font-size: 15px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            font-weight: light;
+            border: 2px solid transparent;
+        }
+        ul{
+            display: block;
+            width: 100%;
+            list-style: none;
+            position: absolute;
+            top:110%;
+            padding: 0 10px 10px;
+            left: 0;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 15;
+            li{
+                position: relative;
+                transition: 0.3s;
+                &:after{
+                    content: ' ';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    height: 1px;
+                    transition: 0.3s;
+                    width: 0;
+
+                }
+                &:hover:after{
+                    background-color: #d3a630;
+                    left: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.sub-category{
+    position: absolute;
+    width: 100%;
+    margin-top: 74px;
+    background-color: #1c1b1b;
+    height: 300px;
+    opacity: 0;
+    display: none;
+    z-index: 20;
+    ul{
+        margin-top: 25px;
+        display: block;
+        height: 100%;
+        li{
+            display: block;
+            height: 100%;
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: 10px 20px;
+                font-size: 16px;
+                height: 100%;
+                &:hover{
+                    background-color: #fff;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}
+.katalog_prod{
+    padding: 40px 0;
+}

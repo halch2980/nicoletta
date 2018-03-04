@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.busket{
+    position: relative;
+    display: block;
+    padding: 40px 0;
+    .busket-area{
+        border: 2px solid #000;
+        padding: 20px 0;
+        .busket-item{
+            .sell{
+                display: inline-block;
+                text-align: right;
+                padding: 10px 15px;
+                background-color: #000;
+                border: 2px solid #000;
+                color: #fff;
+                margin-top: 40px;
+                margin-left: 50%;
+                &:hover{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+            margin-bottom: 10px;
+            min-height: 300px;
+            max-height: 300px;
+            display: block;
+            position: relative;
+            &:after{
+                content: " ";
+                position: absolute;
+                bottom: 0;
+                left: 5%;
+                width: 90%;
+                height: 2px;
+                background-color: #dbb858;
+            }
+            .p-desc{
+                display: inline-block;
+                margin-bottom: 0;
+
+            }
+            .name{
+                font-weight: light;
+                margin-top: 10px;
+            }
+            .quantity{
+                display: block;
+                .cost{
+                    display: inline-block;
+                    font-size: 24px;
+                    line-height: 26px;
+                    margin-bottom: 0;
+                    transform: translate(120px, 4px);
+                }
+                .button-quantity{
+                    outline: none;
+                    margin: 0px 5px;
+                    text-align: center;
+                    display: inline-block;
+                    height: 26px;
+                    line-height: 26px;
+                    width: 26px;
+                    background: #000;
+                    color: #fff;
+                    border:none;
+                }
+                .p-quantity{
+                    transform: translate(0px, 2px);
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 0;
+                }
+            }
+            .color{
+                margin: 10px 0;
+                display:block;
+                .button-color{
+                    outline: none;
+                    line-height: 26px;
+                    height: 26px;
+                    width: 26px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+            .size{
+                margin: 10px 0;
+                .button-size{
+                    outline: none;
+                    line-height: 26px;
+                    height: 26px;
+                    width: 26px;
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+    .user-info{
+        padding: 20px;
+        .h3-desc{
+            margin-top: 10px;
+            font-weight: light;
+            text-align: center;
+        }
+        form{
+            padding: 20px;
+            input{
+                padding: 5px 5px 5px 10px;
+                display: block;
+                width: 80%;
+                margin-left: 10%;
+                margin-bottom: 20px;
+                line-height: 26px;
+                font-size: 16px;
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid #dbb858;
+                outline: none;
+            }
+            textarea{
+                padding: 5px 5px 5px 10px;
+                display: block;
+                margin-left: 10%;
+                font-size: 16px;
+                width: 80%;
+                border: 2px solid #dbb858;
+                outline: none;
+                min-height: 100px;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.zoom-area{
+    position: absolute;
+    height: 210%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1002;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.31);
+    .zoom-area-bg{
+        display: block;
+        height: 90%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+        background-color: #fff;
+        position: relative;
+        border: 2px solid #000;
+        img{
+            z-index: 1002;
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .close-button{
+            transform: translate(-10px, -10px);
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            height: 40px;
+            width: 40px;
+            z-index: 1005;
+            outline: none;
+            border: 2px solid #000;
+                background-color: #fff;
+            i{
+
+                color: #000;
+            }
+        }
+    }
+
+}
+.product-item-section{
+    margin: 20px 0;
+    .prod-desc{
+        margin-top: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: light;
+    }
+    .big-slider-area{
+        position: relative;
+        &:hover{
+            .zoom{
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    .slider-big{
+        height: 510px;
+        position: relative;
+
+        img{
+            height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+    }
+    .slider-smal{
+        margin-top: 90px;
+        height: 150px;
+        position: relative;
+        img{
+            height: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .h2-prod-name{
+        font-weight: light;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .prod-desc-color{
+        display: block;
+        margin: 40px 0 10px;
+        width: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            display: block;
+            list-style: none;
+            li{
+                display: inline-block;
+                p{
+                    font-size: 16px;
+                    color: #696969;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    .prod-desc-size{
+        display: block;
+        margin: 10px 0;
+        width: 100%;
+        position: relative;
+        ul{
+            width: 100%;
+            display: block;
+            list-style: none;
+            li{
+                display: inline-block;
+                p{
+                    font-size: 16px;
+                    color: #696969;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
