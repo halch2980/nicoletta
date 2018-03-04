@@ -25,18 +25,12 @@
   background-color: #000000;
 }
 .user-section .orders .order {
-  padding: 20px 0;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  margin-right: 0;
   display: block;
   position: relative;
-}
-.user-section .orders .order:after {
-  position: absolute;
-  content: " ";
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ffbd3f;
+  border-bottom: 3px solid #d4a63e;
 }
 .user-section .orders .order .col-xs-1 {
   padding: 0;
@@ -57,7 +51,6 @@
 }
 .user-section .orders .order .order-info {
   display: none;
-  height: 150px;
   margin-top: 20px;
   position: relative;
 }

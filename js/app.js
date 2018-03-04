@@ -78,17 +78,7 @@ $(document).ready(function(){
 
     });
     $('.button-order').click(function(){
-        var p=$(this).parent('div').parent('div');
-        if ($(p).children('.order-info').is(':hidden')){
-            $('.order-info').each(function(){
-                $(this).children('.order-info').slideUp('slow');
-            });
-            $(p).children('.order-info').slideDown('slow');
-        } else{
-            $(p).children('.order-info').slideUp('slow');
-        }
-
-
+       $(this).parents('.order').find('.order-info').slideToggle();
 
     });
 
